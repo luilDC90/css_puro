@@ -497,6 +497,23 @@ label {
 
 @media only screen and (max-width: 1023px) {
 
+    #banner {
+	}
+
+
+
+
+
+    iframe {
+        margin-top: 3em;
+        margin-bottom: 6em;
+        width: 80%;
+        height: 33em;
+    }
+
+
+
+
 .alin{
       align-self: center;
       margin: auto;
@@ -508,6 +525,20 @@ label {
 
 
 @media only screen and (max-width: 750px) {
+    iframe {
+        margin-top: 1em;
+        margin-bottom: 6em;
+        margin-left: -0em;
+        width: 100%;
+        height: 20em;
+    }
+    
+    #banner {
+
+	}
+
+    
+    
     label {
         display: block;
         cursor: pointer;
@@ -561,18 +592,20 @@ label {
     display: grid;
     grid-template-columns:100%;
     margin-top: 0;
-    margin-left: 45px;
+    margin-left: 0;
     }
     .card--hor{
-      margin-top: 40px;    
+      margin-top: 40px; 
+      margin-left: 0;   
       height:60px;
-      width:310px;
+      width:280px;
+      grid-template-columns: 5% 95%;
     }
     .alin{
       display: block;
-      grid-template-columns: 100%;
       align-self: center;
       margin: auto;
+      margin-left: -3.5em;
     }
     .alin--cards{
       border-radius: 6px 6px 0px 0px;
