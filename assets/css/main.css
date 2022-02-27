@@ -93,13 +93,13 @@ header{
 
 
 
-/* iconos fixed */
+/* icons fixed */
 .logo{
     position: fixed;
     margin-top: 60px;
     margin-bottom: 0;
     right: 30px;
-    background-color: azure;
+    background-color: #ffffff;
     border-radius: 10px;
     border: 2px solid gray;
     width: 80px;
@@ -592,25 +592,33 @@ label {
     display: grid;
     grid-template-columns:100%;
     margin-top: 0;
-    margin-left: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
     }
     .card--hor{
       margin-top: 40px; 
       margin-left: 0;   
       height:60px;
       width:280px;
-      grid-template-columns: 5% 95%;
+      max-width: 100%;
+      grid-template-columns: 3% 97%;
     }
+    .card--hor img {
+        margin-left: 1em;
+        }
+        .card--hor > h3 {
+            font-size: 1rem;
+        }
     .alin{
+      width: 100%;  
       display: block;
       align-self: center;
-      margin: auto;
-      margin-left: -3.5em;
+      
     }
     .alin--cards{
-      border-radius: 6px 6px 0px 0px;
-      width: 3rem;  
-      margin-left: 60px;   
+      border-radius: 6px;  
+      width: 100%;  
     }
     #footer {
 		padding: 1em 0 1em 0;
@@ -666,7 +674,7 @@ ul{
 	width: 100%;
 	flex-shrink: 0;
 	animation-name: slide;
-	animation-duration: 5s;
+	animation-duration: 10s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
