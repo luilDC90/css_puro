@@ -38,7 +38,7 @@ a{
 
 h1{
     font-size:2em;
-    color: firebrick;
+    color: #c3572c;
 }
 
 
@@ -272,7 +272,7 @@ span{
 
 
 
-/* card */
+/* cards "lo que hacemos"*/
 
 .box--card{
         color: #646464;
@@ -296,12 +296,10 @@ span{
     margin-left: 2em;
         }
 .secc--cards{
-    align-items: inline;
     display: grid;
     grid-template-columns:50% 50%;
     margin-top: 3em;
-    margin-left: 6em;
-    margin-right: 2em;
+    align-items: center;
 }
 .card--hor{
   color: aliceblue;
@@ -316,7 +314,7 @@ span{
   align-items: inline;
   display: grid;
   grid-template-columns: 10% 90%;
-     
+  margin: auto;
 }
 
 .card--hor > h3{
@@ -346,29 +344,36 @@ span{
   z-index: -1;
         }
 
-
+/* cards "links con img"*/
 
 .alin{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin-left: 8em; 
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns:50% 50%;
 }
 	
+#alin--cardsl{
+    display: grid;
+    border-radius: 6px 6px 0px 0px;
+    margin: 5rem;
+    padding: auto;
+}
 
-
-.alin--cards{
-  border-radius: 6px 6px 0px 0px;
-  width: 3rem;  
+#alin--cardsr{
+    display: grid;
+    border-radius: 6px 6px 0px 0px; 
+    margin: 5rem;
+    padding: auto;
 }
 
 .cards{
   width: 350px;    
-  margin-top: 50px;
+  margin-top: 0px;
   border-radius: 6px 6px 0px 0px;
   box-shadow: 0 15px 30px 1px grey;  
-  position: relative;
-  margin-bottom: -10px;
-        }
+   }
+
 .alin--cards img{
   z-index: -1; 
 }
@@ -386,8 +391,15 @@ span{
 .button1:hover {
   background-color: #555555;
   color: white;
-    cursor: pointer;
+  cursor: pointer;
 }
+
+
+
+
+
+/* contacto*/
+
 .button2 {
   background-color: white;
   color: black;
@@ -608,13 +620,14 @@ label {
         margin-left: 1em;
         }
         .card--hor > h3 {
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
     .alin{
       width: 100%;  
       display: block;
       align-self: center;
-      
+      grid-template-columns: 100%;
+      display: grid;
     }
     .alin--cards{
       border-radius: 6px;  
