@@ -164,7 +164,15 @@ header{
         max-width: 100%;
         max-height: 100%;
         border-radius: 8px;
+        z-index: -50;
 	}
+
+.banner--logo{
+    position: absolute;
+    opacity: 20%;
+    margin-left: -15em;
+    box-shadow: #c3572c;
+}
 
 .logo-c{
    margin-top: -160px;
@@ -351,19 +359,20 @@ span{
     max-width: 100%;
     display: grid;
     grid-template-columns:50% 50%;
+    margin-top: 5em;
 }
 	
 #alin--cardsl{
     display: grid;
     border-radius: 6px 6px 0px 0px;
-    margin: 5rem;
+    margin: auto;
     padding: auto;
 }
 
 #alin--cardsr{
     display: grid;
     border-radius: 6px 6px 0px 0px; 
-    margin: 5rem;
+    margin: auto;
     padding: auto;
 }
 
@@ -371,7 +380,8 @@ span{
   width: 350px;    
   margin-top: 0px;
   border-radius: 6px 6px 0px 0px;
-  box-shadow: 0 15px 30px 1px grey;  
+  box-shadow: 0 15px 30px 1px grey;
+ 
    }
 
 .alin--cards img{
@@ -380,13 +390,14 @@ span{
 
 
 .button1 {
-  width: 21.9rem;
+  text-align: center;
+  width: 350px;
   height: 9rem;    
   background-color: white;
-  color: gray;
-  border: 2px solid #555555;
+  color: #303030;
   border-radius: 0px 0px 6px 6px;
   box-shadow: 0 15px 30px 1px grey;
+  margin-top: -2px;
 }
 .button1:hover {
   background-color: #555555;
@@ -396,24 +407,44 @@ span{
 
 
 
+/*secc nosotros*/
+#textos{
+    font-size: 2em;
+}
+
+blockquote{
+    margin-bottom: 3em;
+    font-size: 1em;
+    background-color: #c4e5e9;
+    border-radius: 3px;
+    line-height: 1.5em;
+    margin-left: 5em;
+    margin-right: 5em;
+
+}
+
 
 
 /* contacto*/
 
-.button2 {
+.button2{
   background-color: white;
   color: black;
   border: 2px solid #555555;
   border-radius: 6px;
   box-shadow: 0 15px 30px 1px grey;
-  padding-top: 15px;
+  padding: 15px;
+  margin-top: 50em;
 }
 .button2:hover {
   background-color: #555555;
   color: white;
-    cursor: pointer;
+  cursor: pointer;
 }
 
+.box p{
+    margin-bottom: 50px;
+  }
 
 
 /* Footer */
@@ -421,8 +452,8 @@ span{
 #footer {
 		padding: 1em 0 1em 0;
 		text-align: center;
-        margin-top: -10em;
-        margin-bottom: 10em;
+        margin-top: -5em;
+        margin-bottom: 5em;
 	}
 
 			
@@ -510,10 +541,16 @@ label {
 @media only screen and (max-width: 1023px) {
 
     #banner {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
 	}
 
 
-
+    blockquote{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 
 
     iframe {
@@ -528,12 +565,14 @@ label {
 
 .alin{
       align-self: center;
-      margin: auto;
     }
 
+.cards{
+    margin-top: 5em;
+}  
+
+
 }
-
-
 
 
 @media only screen and (max-width: 750px) {
@@ -546,9 +585,17 @@ label {
     }
     
     #banner {
-
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
 	}
 
+
+
+    blockquote{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
     
     
     label {
