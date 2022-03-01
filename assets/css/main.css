@@ -104,13 +104,13 @@ header{
     border: 2px solid gray;
     width: 80px;
     height: 80px;
-    z-index: 50;
+    z-index: 5;
 }
 .logo img{
     width: 80px;
     height: 80px; 
     box-shadow: 0;
-    z-index: 50;
+    z-index: 5;
 }
 
 .texto-f{
@@ -367,6 +367,7 @@ span{
     border-radius: 6px 6px 0px 0px;
     margin: auto;
     padding: auto;
+    max-width: 100%;
 }
 
 #alin--cardsr{
@@ -374,6 +375,7 @@ span{
     border-radius: 6px 6px 0px 0px; 
     margin: auto;
     padding: auto;
+    max-width: 100%;
 }
 
 .cards{
@@ -410,6 +412,10 @@ span{
 /*secc nosotros*/
 #textos{
     font-size: 2em;
+}
+
+#textos p{
+    margin: 25px;
 }
 
 blockquote{
@@ -513,7 +519,8 @@ blockquote{
 }
 .menu {
     margin: 0 30px 0 0;
-     z-index: 100;
+    z-index: 300;
+    position: relative;
 }
 .menu a {
     clear: right;
@@ -521,7 +528,8 @@ blockquote{
     color: gray;
     margin: 0 10px;
     line-height: 70px;
-       z-index: 100;
+    z-index: 300;
+    position: relative;
 }
 label {
     margin: 0 40px 0 0;
@@ -546,10 +554,15 @@ label {
         max-height: 100%;
 	}
 
+    #banner--logo{
+        width: 100%;
+      }
+
 
     blockquote{
         margin-left: 1rem;
         margin-right: 1rem;
+        font-size: 0.5em;
     }
 
 
@@ -568,7 +581,7 @@ label {
     }
 
 .cards{
-    margin-top: 5em;
+    margin-top: 2em;
 }  
 
 
@@ -583,14 +596,32 @@ label {
         width: 100%;
         height: 20em;
     }
-    
+    #textos h1{
+        font-size: 1.5em;
+    }
+
+    #textos p{
+        font-size: 0.6em;
+    }
+
+    #textos h4{
+        font-size: 0.7em;
+    }
+
+    #textos ul{
+        margin-left: -2em;
+        
+    }
+
     #banner {
         width: 100%;
         max-width: 100%;
         max-height: 100%;
 	}
 
-
+    #banner--logo{
+        width: 100%;
+      }
 
     blockquote{
         margin-left: 1rem;
