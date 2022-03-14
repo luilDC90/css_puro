@@ -5,6 +5,8 @@
 
 *{
     transition:all 0.4s ;
+    --colorone: rgb(160, 171, 180);
+    --colortext: #bb552c;
 }
 
 			
@@ -14,7 +16,7 @@ html {
 
 body {
 		
-        background-color: darkgray;
+        background-color: rgb(176, 188, 197);
          
 	}
 
@@ -29,8 +31,8 @@ a{
 }
 
 h1{
-    font-size:2em;
-    color: #c3572c;
+    font-size:3em;
+    color: var(--colortext);
 }
 
 
@@ -77,7 +79,7 @@ header{
 .menu >a:hover{
     transform: scale(1.1);
     background: white;
-    color: red;
+    color: rgb(85, 82, 82);
     box-shadow: 0px 0px 10px 0px rgba(0,0.5);
     z-index: 5;
     border-radius: 15px;
@@ -144,7 +146,7 @@ header{
 
 #banner {
 		background-attachment: fixed;
-		background-color: #666;
+		background-color: var(--colorone);
 		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
 		background-position: center;
 		background-repeat: no-repeat;
@@ -159,11 +161,11 @@ header{
         z-index: -50;
 	}
 
-.banner--logo{
+#banner--logo{
     position: absolute;
     opacity: 20%;
     margin-left: -15em;
-    box-shadow: #c3572c;
+    box-shadow: var(--colortext);
 }
 
 .logo-c{
@@ -300,7 +302,7 @@ span{
   width:300px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background: grey;
+  background: var(--colorone);
   border-radius: 6px;
   box-shadow: 0 6px 4px 0px #616363;
   text-align: left;   
@@ -510,7 +512,7 @@ blockquote{
 .menu a {
     clear: right;
     text-decoration: none;
-    color: gray;
+    color: rgb(255, 251, 251);
     margin: 0 10px;
     line-height: 70px;
     z-index: 300;
@@ -630,7 +632,7 @@ label {
         display: block;
         border-bottom: 1px solid #EAEAEB;
         margin: 0;
-        background-color: darkgrey;
+        background-color: var(--colorone);
         width: 100%;
           z-index: 100;
     }
@@ -713,19 +715,26 @@ ul{
 	10% { transform: translateX(0); }
 
 	15% { transform: translateX(-100%); }
-	30% { transform: translateX(-100%); }
+	20% { transform: translateX(-100%); }
 
+	25% { transform: translateX(-200%); }
 	35% { transform: translateX(-200%); }
-	50% { transform: translateX(-200%); }
 
-	55% { transform: translateX(-300%); }
-	70% { transform: translateX(-300%); }
+	40% { transform: translateX(-300%); }
+	50% { transform: translateX(-300%); }
 
-	75% { transform: translateX(-400%); }
-	90% { transform: translateX(-400%); }
+	55% { transform: translateX(-400%); }
+	65% { transform: translateX(-400%); }
 
-	95% { transform: translateX(-500%); }
-	100% { transform: translateX(-500%); }
+	70% { transform: translateX(-500%); }
+	80% { transform: translateX(-500%); }
+    
+    85% { transform: translateX(-600%); }
+	90% { transform: translateX(-600%); }
+    
+    95% { transform: translateX(-700%); }
+	100% { transform: translateX(-700%); }
+    
 }
 
 
@@ -750,7 +759,7 @@ ul{
 	width: 100%;
 	flex-shrink: 0;
 	animation-name: slide;
-	animation-duration: 10s;
+	animation-duration: 28s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
