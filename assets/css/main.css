@@ -4,7 +4,6 @@
 
 
 *{
-    transition:all 0.4s ;
     --colorone: rgb(160, 171, 180);
     --colortext: #bb552c;
 }
