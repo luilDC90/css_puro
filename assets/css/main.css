@@ -587,6 +587,9 @@ label {
         width: 100%;
         height: 20em;
     }
+    #img-anch{
+       display: none;
+    }
     #textos h1{
         font-size: 1.5em;
     }
