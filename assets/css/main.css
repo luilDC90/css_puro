@@ -589,6 +589,10 @@ label {
     #img-anch{
        display: none;
     }
+    ul li strong{
+        font-size: 1rem;
+        margin: auto;
+    }
     #textos h1{
         font-size: 1.5em;
     }
